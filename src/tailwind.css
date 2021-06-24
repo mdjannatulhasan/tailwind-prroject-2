@@ -12,8 +12,14 @@ body{
     @apply bg-primary px-6 py-3 text-white text-[14px] rounded hover:bg-[#fe1720];
 }
 .btn-secondary{
-    @apply bg-white px-6 py-3 text-[14px] text-black rounded hover:bg-[#fe1720] hover:text-white;
+    @apply bg-white px-6 py-3 text-[14px] text-primary rounded hover:bg-[#fe1720] hover:text-white;
 }
 ul.nav li{ 
-    @apply after:mt-1 after:block after:border-2 after:border-transparent hover:after:border-primary after:w-full after:h-1 after:rounded; 
+    @apply text-heading after:mt-1 after:block after:border-2 after:border-transparent hover:after:border-primary after:w-full after:h-1 after:rounded; 
+}
+.sec-title{
+    @apply text-5xl text-heading leading-[63px] before:border-2 before:block before:border-primary before:w-12 before:h-1 before:rounded before:mb-4 before:left-0; 
+}
+.menu{
+    @apply relative bg-sec-bg backdrop-filter backdrop-blur-xl;
 }

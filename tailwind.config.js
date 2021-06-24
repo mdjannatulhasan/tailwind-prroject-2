@@ -24,6 +24,9 @@ module.exports = {
       },
       backgroundImage: theme => ({
         'hero-bg': "linear-gradient(to right bottom, rgba(0, 0, 0,0.63), rgba(0, 0, 0,0.63)),url('../images/hero.png')",
+        'sec-bg': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)),url('../images/third-sec-bg.png')",
+        'shedding': "linear-gradient(to right bottom, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46))",
+        'pizza-bg': "url('../images/pizza-bg-2.png')",
        })
     },
   },
@@ -32,5 +35,7 @@ module.exports = {
       
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
