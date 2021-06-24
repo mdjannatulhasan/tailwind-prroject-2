@@ -210,6 +210,9 @@
                                 </div>
                             </div>
                             <textarea class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75 name=" id="" cols="30" rows="6" placeholder="Beskjed"></textarea>
+                            <div>
+                                <a class="btn-primary" href="">Reservere et bord</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -219,40 +222,108 @@
     <section class="py-28">
         <div class="container">
             <div class="grid grid-cols-2">
-                <div class="space-y-6 rounded border-[1px] border-[#D8D8D8]">
-                    <div class="flex justify-start items-center">
-                        <div class="mr-6">
-                            <img src="images/shape1.png" alt="">
+                <div>
+                    <div class="space-y-6 rounded border-[1px] border-[#D8D8D8] py-10 w-8/12">
+                        <div class="flex justify-start items-center px-10">
+                            <div class="mr-6">
+                                <img src="images/shape1.png" alt="">
+                            </div>
+                            <div>
+                                <h5 class="w-full">Lonevegen 1, 5221 Nesttun</h5>
+                            </div>
                         </div>
-                        <div>
-                            <h5 class="w-full">Lonevegen 1, 5221 Nesttun</h5>
+                        <div class="flex justify-start items-center px-10">
+                            <div class="mr-6">
+                                <img src="images/shape2.svg" alt="">
+                            </div>
+                            <div>
+                                <h5 class="w-full">+1 (2345) 678-90-12</h5>
+                            </div>
+                        </div>
+                        <div class="flex justify-start items-center px-10">
+                            <div class="mr-6">
+                                <img src="images/shape3.svg" alt="">
+                            </div>
+                            <div>
+                                <h5 class="w-full">info@company.com</h5>
+                            </div>
+                        </div>
+                        <hr class="border-t-[1px] border-[#D8D8D8]">
+                        <div class="flex justify-center px-10">
+                            <a class="mr-5" href=""><img src="images/fb.png" alt=""></a>
+                            <a href=""><img src="images/insta.png" alt=""></a>
                         </div>
                     </div>
-                    <div class="flex justify-start items-center">
-                        <div class="mr-6">
-                            <img src="images/shape2.svg" alt="">
+                </div>
+                <div class="">
+                    <div class="flex h-full flex-col space-y-5">
+                        <div>
+                            <h2 class="sec-title">Kontakt oss</h2>
+                        </div>
+                        <div class="w-8/12 pb-8">
+                            <p>
+                                Vi serverer mat med enkle og rene smaker som er laget fra bunnen av - med de beste råvarene.
+                            </p>
+                        </div>
+                        <div class="space-y-5 text-xs">
+                            <div class="grid grid-cols-2 gap-x-5">
+                                <div>
+                                    <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Navn" name="" id="" >
+                                </div>
+                                <div>
+                                    <input type="email" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Mail" name="" id="" >
+                                </div>
+                            </div>
+                            <textarea class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75 name=" id="" cols="30" rows="6" placeholder="Beskjed"></textarea>
                         </div>
                         <div>
-                            <h5 class="w-full">+1 (2345) 678-90-12</h5>
+                            <a class="btn-primary" href="">Send</a>
                         </div>
-                    </div>
-                    <div class="flex justify-start items-center">
-                        <div class="mr-6">
-                            <img src="images/shape3.svg" alt="">
-                        </div>
-                        <div>
-                            <h5 class="w-full">info@company.com</h5>
-                        </div>
-                    </div>
-                    <hr class="border-[1px] border-[#D8D8D8]">
-                    <div class="flex text-center">
-                        <a href=""><img src="images/fb.png" alt=""></a>
-                        <a href=""><img src="images/insta.png" alt=""></a>
                     </div>
                 </div>
             </div>
-            <div class="grid grid-cols-6"></div>
         </div>
     </section>
+    <footer class="bg-[#1B1B1B] py-10 text-white">
+        <div class="container">
+            <div class="grid grid-cols-4">
+                <div class="logo">
+                    <img src="images/footer-logo.png" alt="">
+                </div>
+                <div class="text-center flex flex-col justify-center">
+                    <img class="mx-auto" src="images/carbon_location-filled.svg" alt="">
+                    <h6 class="text-lg text-primary py-2">Address</h6>
+                    <p class="text-xs"> Lonevegen 1, 5221 Nesttun</p>
+                </div>
+                <div class="text-center flex flex-col justify-center">
+                    <img class="mx-auto" src="images/clock.svg" alt="">
+                    <h6 class="text-lg text-primary py-2">Åpningstider</h6>
+                    <p class="text-xs"> Vi har åpent alle dager fra kl. 13 -23</p>
+                </div>
+                <div class="text-center flex flex-col justify-center">
+                    <img class="mx-auto" src="images/call.svg" alt="">
+                    <h6 class="text-lg text-primary py-2">Contakt no</h6>
+                    <p class="text-xs"> Contact no</p>
+                </div>
+            </div>
+            <hr class="my-10 border-t-[1px] border-[#ffffff47]">
+            <div class="flex justify-between">
+                <div>
+                    <ul class="nav2 flex space-x-10 text-sm">
+                        <li><a href=""> Hjem</a></li>
+                        <li><a href=""> Meny</a></li>
+                        <li><a href=""> Bestill Board</a></li>
+                        <li><a href=""> Firmabestilling</a></li>
+                        <li><a href=""> Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="flex space-x-4">
+                    <a href=""><img src="images/fb2.svg" alt=""></a>
+                    <a href=""><img src="images/twitter.svg" alt=""></a>
+                    <a href=""><img src="images/insta2.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
