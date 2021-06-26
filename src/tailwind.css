@@ -17,12 +17,19 @@ body{
 ul.nav li{ 
     @apply text-heading after:mt-1 after:block after:border-2 after:border-transparent hover:after:border-primary after:w-full after:h-1 after:rounded; 
 }
-.sec-title{
-    @apply text-5xl text-heading leading-[63px] before:border-2 before:block before:border-primary before:w-12 before:h-1 before:rounded before:mb-4 before:left-0; 
+.sec-title{ 
+    @apply lg:text-5xl md:text-4xl text-3xl text-heading lg:leading-[63px] md:leading-normal leading-10 before:border-2 before:block before:border-primary before:w-12 before:h-1 before:rounded before:mb-4 before:left-0; 
 }
 .menu{
     @apply relative bg-sec-bg backdrop-filter backdrop-blur-xl;
 }
+.white-sec-title{
+    @apply lg:text-5xl md:text-4xl text-3xl text-white lg:w-10/12 text-center leading-[60px] md:leading-normal leading-10;
+}
+.two-image{
+    @apply col-span-12 lg:col-span-6 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4;
+}
+
 
 .hero-2{
     @apply bg-hero-bg-2 bg-cover py-52;

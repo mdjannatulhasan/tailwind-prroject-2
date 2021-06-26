@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="text-body">
-    <header class="py-3">
+    <header class="py-9 lg:py-5">
         <div class="container ">
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center lg:flex-row lg:space-y-0 space-y-8 flex-col ">
                 <img src="images/logo.svg" alt="logo">
                 <div>
-                    <ul class="nav flex space-x-10 text-xl">
-                        <li><a class="active active:text-primary" href="index.html"> Hjem</a></li>
+                    <ul class="nav flex md:flex-row md:space-x-10 md:space-y-0 text-xl flex-col sm:space-y-10 items-center justify-center">
+                        <li><a href="index.html"> Hjem</a></li>
                         <li><a href="meny.html"> Meny</a></li>
                         <li><a href="bestill.html"> Bestill Board</a></li>
                         <li><a href="bestill.html"> Firmabestilling</a></li>
@@ -33,63 +33,39 @@
     
     <section class="hero-2">
         <div class="container text-center text-white">
-            <h1 class="text-[4rem] w-2/3 mx-auto">La deg friste av vår smakfulle meny</h1>
+            <h1 class="lg:text-[4rem] md:text-5xl text-4xl lg:w-2/3 mx-auto">La deg friste av vår smakfulle meny</h1>
             <p class="pt-8">La deg friste av vår smakfulle meny</p>
         </div>
     </section>
 
-    <section>
-        <div class="container py-28">
-            <div class="grid grid-cols-12">
-                <div class="col-span-12 lg:col-span-7 ">
-                    <div class="flex h-full flex-col justify-between">
-                        <div>
-                            <h2 class="sec-title">Vi lager italienske favoritter for store og små
-                            </h2>
-                        </div>
-                        <div class="w-10/12">
-                            <p>
-                                Eté Restaurant på Nesttun er et sted hvor du kan nyte velsmakende pizza og andre italienske spesialiteter toppet med personlig service i stemningsfulle omgivelser. Kom og prøv vår rikholdige meny med mange fristelser som er laget på de beste råvarer. Spis her, ta med eller få rykende fersk mat levert på døren!
-                            </p>
-                        </div>
-                        <div>
-                            <a class="btn-primary" href="">Bestill Her</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-span-12 lg:col-span-5">
-                    <img src="images/second-pic.png" alt="">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="bg-pizza-bg bg-cover">
-        <div class="grid grid-cols-2">
+        <div class="grid lg:grid-cols-2">
             <div class="bg-shedding">
                 <div class="backdrop-filter backdrop-blur-xl pt-28 pb-16">
-                    <div class="md:pl-[35%] md:pr-[18%] pl-5 pr-5">
+                    <div class="lg:pl-[35%] md:pr-[18%] md:pl-[18%] pl-5 pr-5">
                         <h3 class="text-5xl text-white leading-[60px]">
                             Reservere et bord
                         </h3>
-                        <div class="py-16 space-y-5">
-                            <input type="text" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Ditt navn" name="" id="" >
-                            <input type="email" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Mail" name="" id="" >
-                            <input type="date" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Dato" name="" id="" >
-                            
-                            <div class="grid grid-cols-2 gap-x-5">
-                                <div>
-                                    <input type="text" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Tid" name="" id="" >
+                        <form action="" method="post">
+                            <div class="py-16 space-y-5">
+                                <input type="text" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Ditt navn" name="" id="" >
+                                <input type="email" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Mail" name="" id="" >
+                                <input type="date" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Dato" name="" id="" >
+                                
+                                <div class="grid grid-cols-2 gap-x-5">
+                                    <div>
+                                        <input type="text" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Tid" name="" id="" >
+                                    </div>
+                                    <div>
+                                        <input type="text" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Antall personer" name="" id="" >
+                                    </div>
                                 </div>
+                                <textarea class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75 name=" id="" cols="30" rows="6" placeholder="Beskjed"></textarea>
                                 <div>
-                                    <input type="text" class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75" placeholder="Antall personer" name="" id="" >
+                                    <a class="btn-primary" type="submit" href="">Reservere et bord</a>
                                 </div>
                             </div>
-                            <textarea class="rounded text-xs pl-3 bg-white w-full border-transparent placeholder:opacity-75 name=" id="" cols="30" rows="6" placeholder="Beskjed"></textarea>
-                            <div>
-                                <a class="btn-primary" href="">Reservere et bord</a>
-                            </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -97,10 +73,10 @@
     </section>
     <section class="py-28">
         <div class="container">
-            <div class="grid grid-cols-2">
-                <div>
-                    <div class="space-y-6 rounded border-[1px] border-[#D8D8D8] py-10 w-8/12">
-                        <div class="flex justify-start items-center px-10">
+            <div class="grid lg:grid-cols-2 lg:gap-x-8 space-y-8 lg:space-y-0">
+                <div class="flex justify-center">
+                    <div class="space-y-6 rounded md:border-[1px] md:border-[#D8D8D8] py-10 md:w-8/12">
+                        <div class="flex justify-start items-center md:px-10">
                             <div class="mr-6">
                                 <img src="images/shape1.png" alt="">
                             </div>
@@ -108,7 +84,7 @@
                                 <h5 class="w-full">Lonevegen 1, 5221 Nesttun</h5>
                             </div>
                         </div>
-                        <div class="flex justify-start items-center px-10">
+                        <div class="flex justify-start items-center md:px-10">
                             <div class="mr-6">
                                 <img src="images/shape2.svg" alt="">
                             </div>
@@ -116,7 +92,7 @@
                                 <h5 class="w-full">+1 (2345) 678-90-12</h5>
                             </div>
                         </div>
-                        <div class="flex justify-start items-center px-10">
+                        <div class="flex justify-start items-center md:px-10">
                             <div class="mr-6">
                                 <img src="images/shape3.svg" alt="">
                             </div>
@@ -125,7 +101,7 @@
                             </div>
                         </div>
                         <hr class="border-t-[1px] border-[#D8D8D8]">
-                        <div class="flex justify-center px-10">
+                        <div class="flex justify-center md:px-10">
                             <a class="mr-5" href=""><img src="images/fb.png" alt=""></a>
                             <a href=""><img src="images/insta.png" alt=""></a>
                         </div>
@@ -141,19 +117,22 @@
                                 Vi serverer mat med enkle og rene smaker som er laget fra bunnen av - med de beste råvarene.
                             </p>
                         </div>
-                        <div class="space-y-5 text-xs">
-                            <div class="grid grid-cols-2 gap-x-5">
-                                <div>
-                                    <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Navn" name="" id="" >
+                        
+                        <div class="text-xs">
+                            <form class="space-y-6" action="" method="post">
+                                <div class="grid grid-cols-2 gap-x-6">
+                                    <div>
+                                        <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Navn" name="" id="" >
+                                    </div>
+                                    <div>
+                                        <input type="email" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Mail" name="" id="" >
+                                    </div>
                                 </div>
+                                <textarea class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75 name=" id="" cols="30" rows="6" placeholder="Beskjed"></textarea>
                                 <div>
-                                    <input type="email" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Mail" name="" id="" >
+                                    <a class="btn-primary" href="">Send</a>
                                 </div>
-                            </div>
-                            <textarea class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75 name=" id="" cols="30" rows="6" placeholder="Beskjed"></textarea>
-                        </div>
-                        <div>
-                            <a class="btn-primary" href="">Send</a>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -163,8 +142,8 @@
 
     <footer class="bg-[#1B1B1B] py-10 text-white">
         <div class="container">
-            <div class="grid grid-cols-4">
-                <div class="logo">
+            <div class="grid lg:grid-cols-4 gap-y-9 lg:gap-y-0">
+                <div class="logo mx-auto lg:mx-0">
                     <img src="images/footer-logo.png" alt="">
                 </div>
                 <div class="text-center flex flex-col justify-center">
@@ -184,9 +163,9 @@
                 </div>
             </div>
             <hr class="my-10 border-t-[1px] border-[#ffffff47]">
-            <div class="flex justify-between">
+            <div class="flex lg:justify-between lg:flex-row flex-col space-y-7 lg:space-y-0 items-center">
                 <div>
-                    <ul class="nav2 flex space-x-10 text-sm">
+                    <ul class="nav2 flex lg:space-x-10 lg:flex-row flex-col space-y-4 lg:space-y-0 text-sm items-center">
                         <li><a href=""> Hjem</a></li>
                         <li><a href=""> Meny</a></li>
                         <li><a href=""> Bestill Board</a></li>
@@ -202,5 +181,7 @@
             </div>
         </div>
     </footer>
+    
+
 </body>
 </html>
