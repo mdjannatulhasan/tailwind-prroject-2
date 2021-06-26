@@ -37,3 +37,9 @@ ul.nav li{
 .meny-full .menu-item{
     @apply  border-b-[1px] border-[#464646];
 }
+.meny-full .menu-name{
+    @apply px-4 py-6 text-heading uppercase;
+}
+.meny-full .active-meny{
+    @apply text-primary;
+}

@@ -1441,6 +1441,21 @@ ul.nav li:hover::after {
   border-color: rgba(70, 70, 70, var(--tw-border-opacity));
 }
 
+.meny-full .menu-name {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  text-transform: uppercase;
+  --tw-text-opacity: 1;
+  color: rgba(45, 45, 45, var(--tw-text-opacity));
+}
+
+.meny-full .active-meny {
+  --tw-text-opacity: 1;
+  color: rgba(254, 74, 81, var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
   .sm\:mx-auto {
     margin-left: auto;
