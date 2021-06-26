@@ -34,3 +34,6 @@ ul.nav li{
 .hero-2{
     @apply bg-hero-bg-2 bg-cover py-52;
 }
+.meny-full .menu-item{
+    @apply  border-b-[1px] border-[#464646];
+}
