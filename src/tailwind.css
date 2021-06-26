@@ -23,3 +23,7 @@ ul.nav li{
 .menu{
     @apply relative bg-sec-bg backdrop-filter backdrop-blur-xl;
 }
+
+.hero-2{
+    @apply bg-hero-bg-2 bg-cover py-52;
+}
