@@ -1451,9 +1451,26 @@ ul.nav li:hover::after {
   color: rgba(45, 45, 45, var(--tw-text-opacity));
 }
 
+.meny-full .menu-name:hover {
+  --tw-text-opacity: 1;
+  color: rgba(254, 74, 81, var(--tw-text-opacity));
+}
+
 .meny-full .active-meny {
   --tw-text-opacity: 1;
   color: rgba(254, 74, 81, var(--tw-text-opacity));
+}
+
+.menu-name h5 {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .menu-name h5 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 640px) {

@@ -38,8 +38,11 @@ ul.nav li{
     @apply  border-b-[1px] border-[#464646];
 }
 .meny-full .menu-name{
-    @apply px-4 py-6 text-heading uppercase;
+    @apply px-4 py-6 text-heading uppercase hover:text-primary;
 }
 .meny-full .active-meny{
     @apply text-primary;
+}
+.menu-name h5{
+    @apply lg:text-xl text-xs;
 }
