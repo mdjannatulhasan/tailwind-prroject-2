@@ -1053,6 +1053,10 @@ select {
   padding-bottom: 2.5rem;
 }
 
+.pt-10 {
+  padding-top: 2.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1572,6 +1576,10 @@ ul.nav li:hover::after {
 
   .lg\:pl-\[35\%\] {
     padding-left: 35%;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
   .lg\:text-\[4rem\] {
