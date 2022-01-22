@@ -1,167 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body class="text-body">
-    <header class="py-9 lg:py-5">
-        <div class="container ">
-            <div class="flex justify-between items-center lg:flex-row lg:space-y-0 space-y-8 flex-col ">
-                <img src="images/logo.svg" alt="logo">
-                <div>
-                    <ul class="nav flex md:flex-row md:space-x-10 md:space-y-0 text-xl flex-col sm:space-y-10 items-center justify-center">
-                        <li><a href="index.html"> Hjem</a></li>
-                        <li><a href="meny.html"> Meny</a></li>
-                        <li><a href="bestill.html"> Bestill Board</a></li>
-                        <li><a href="bestill.html"> Firmabestilling</a></li>
-                        <li><a href="kontakt.html"> Kontakt</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <a class="btn-primary" href="">Bestill Her</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <section class="hero-2">
-        <div class="container text-center text-white">
-            <h1 class="lg:text-[4rem] md:text-5xl text-4xl lg:w-2/3 mx-auto">La deg friste av vår smakfulle meny</h1>
-            <p class="pt-8">La deg friste av vår smakfulle meny</p>
-        </div>
-    </section>
-    
-    <section class="py-28">
-        <div class="container">
-            <div class="flex h-full flex-col space-y-5">
-                <div>
-                    <h2 class="sec-title">Skriv til oss!</h2>
-                </div>
-                <div class="lg:w-5/12 pb-8">
-                    <p>
-                        Reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.
-                    </p>
-                </div>
-            </div>
-            
-            <form action="" method="post">
-                <div class="grid lg:grid-cols-2 lg:gap-x-8 space-y-5 lg:space-y-0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+
+        <script src="https://kit.fontawesome.com/74ffea834f.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body class="text-body relative">
+        <header class="py-9 lg:py-5">
+            <div class="container">
+                <div class="hidden lg:flex justify-between items-center lg:flex-row lg:space-y-0 space-y-8 flex-col">
+                    <img src="images/logo.svg" alt="logo" />
                     <div class="">
-                        <div class="flex h-full flex-col justify-between space-y-5 lg:space-y-0">
-                            <div class="grid grid-cols-2 gap-x-6">
-                                <div>
-                                    <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Navn" name="" id="" >
+                        <ul class="nav flex md:flex-row md:space-x-10 md:space-y-0 text-xl flex-col sm:space-y-10 items-center justify-center">
+                            <li><a href="index.html"> Hjem</a></li>
+                            <li><a href="meny.html"> Meny</a></li>
+                            <li><a href="bestill.html"> Bestill Board</a></li>
+                            <li><a href="bestill.html"> Firmabestilling</a></li>
+                            <li><a href="kontakt.html"> Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a class="btn-primary" href="">Bestill Her</a>
+                    </div>
+                </div>
+
+                <div class="lg:hidden flex justify-between items-center">
+                    <img src="images/logo.svg" alt="logo" />
+                    <button class="lg:hidden" id="navOpen"><i class="fas fa-bars"></i></button>
+                    <div class="absolute flex flex-col justify-center space-y-3 items-center bg-white w-full left-0 right-0 h-screen" id="menu2">
+                        <div id="close" class="absolute right-10 top-10"><i class="fas fa-times"></i></div>
+                        <ul class="nav flex text-xl flex-col items-center justify-center">
+                            <li><a href="index.html"> Hjem</a></li>
+                            <li><a href="meny.html"> Meny</a></li>
+                            <li><a href="bestill.html"> Bestill Board</a></li>
+                            <li><a href="bestill.html"> Firmabestilling</a></li>
+                            <li><a href="kontakt.html"> Kontakt</a></li>
+                        </ul>
+                        <a class="btn-primary" href="">Bestill Her</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero-2">
+            <div class="container text-center text-white">
+                <h1 class="lg:text-[4rem] md:text-5xl text-4xl lg:w-2/3 mx-auto">La deg friste av vår smakfulle meny</h1>
+                <p class="pt-8">La deg friste av vår smakfulle meny</p>
+            </div>
+        </section>
+
+        <section class="py-28">
+            <div class="container">
+                <div class="flex h-full flex-col space-y-5">
+                    <div>
+                        <h2 class="sec-title">Skriv til oss!</h2>
+                    </div>
+                    <div class="lg:w-5/12 pb-8">
+                        <p>Reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+                    </div>
+                </div>
+
+                <form action="" method="post">
+                    <div class="grid lg:grid-cols-2 lg:gap-x-8 space-y-5 lg:space-y-0">
+                        <div class="">
+                            <div class="flex h-full flex-col justify-between space-y-5 lg:space-y-0">
+                                <div class="grid grid-cols-2 gap-x-6">
+                                    <div>
+                                        <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Navn" name="" id="" />
+                                    </div>
+                                    <div>
+                                        <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Mail" name="" id="" />
+                                    </div>
+                                </div>
+                                <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Anything" name="" id="" />
+                                <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Anything" name="" id="" />
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="flex h-full flex-col space-y-5">
+                                <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Options" name="" id="" />
+                                <textarea class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75 name=" id="" cols="30" rows="5" placeholder="Beskjed"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-7">
+                        <a class="btn-primary" href="">Send</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="pb-28">
+            <div class="container">
+                <div class="grid lg:grid-cols-2 lg:gap-x-8 space-y-8 lg:space-y-0">
+                    <div class="flex">
+                        <div class="space-y-6 rounded py-10">
+                            <div>
+                                <h2 class="sec-title">Informasjon</h2>
+                            </div>
+                            <div class="flex justify-start items-center">
+                                <div class="mr-6">
+                                    <img src="images/shape1.png" alt="" />
                                 </div>
                                 <div>
-                                    <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Mail" name="" id="" >
+                                    <h5 class="w-full">Lonevegen 1, 5221 Nesttun</h5>
                                 </div>
                             </div>
-                            <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Anything" name="" id="" >
-                            <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Anything" name="" id="" >
-                        </div>
-                    </div>
-                    <div class="">
-                        <div class="flex h-full flex-col space-y-5">
-                            <input type="text" class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75" placeholder="Options" name="" id="" >
-                            <textarea class="rounded text-xs pl-3 bg-white w-full border-[#dadada] placeholder:opacity-75 name=" id="" cols="30" rows="5" placeholder="Beskjed"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="pt-7">
-                    <a class="btn-primary" href="">Send</a>
-                </div>
-            </form>
-        </div>
-    </section>
-    <section class="pb-28">
-        <div class="container">
-            <div class="grid lg:grid-cols-2 lg:gap-x-8 space-y-8 lg:space-y-0">
-                <div class="flex">
-                    <div class="space-y-6 rounded py-10">
-                        <div>
-                            <h2 class="sec-title">Informasjon</h2>
-                        </div>
-                        <div class="flex justify-start items-center">
-                            <div class="mr-6">
-                                <img src="images/shape1.png" alt="">
+                            <div class="flex justify-start items-center">
+                                <div class="mr-6">
+                                    <img src="images/shape2.svg" alt="" />
+                                </div>
+                                <div>
+                                    <h5 class="w-full">+1 (2345) 678-90-12</h5>
+                                </div>
                             </div>
-                            <div>
-                                <h5 class="w-full">Lonevegen 1, 5221 Nesttun</h5>
-                            </div>
-                        </div>
-                        <div class="flex justify-start items-center">
-                            <div class="mr-6">
-                                <img src="images/shape2.svg" alt="">
-                            </div>
-                            <div>
-                                <h5 class="w-full">+1 (2345) 678-90-12</h5>
-                            </div>
-                        </div>
-                        <div class="flex justify-start items-center">
-                            <div class="mr-6">
-                                <img src="images/shape3.svg" alt="">
-                            </div>
-                            <div>
-                                <h5 class="w-full">info@company.com</h5>
+                            <div class="flex justify-start items-center">
+                                <div class="mr-6">
+                                    <img src="images/shape3.svg" alt="" />
+                                </div>
+                                <div>
+                                    <h5 class="w-full">info@company.com</h5>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="border-2 border-gray-400 rounded">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.4951655770715!2d5.348140416222726!3d60.321405538124736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cf9bc8fdd64c7%3A0x645939f62652fe5f!2sLonevegen%201%2C%205221%20Nesttun%2C%20Norway!5e0!3m2!1sen!2sbd!4v1624690975910!5m2!1sen!2sbd" width="600" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    
-    <footer class="bg-[#1B1B1B] py-10 text-white">
-        <div class="container">
-            <div class="grid lg:grid-cols-4 gap-y-9 lg:gap-y-0">
-                <div class="logo mx-auto lg:mx-0">
-                    <img src="images/footer-logo.png" alt="">
-                </div>
-                <div class="text-center flex flex-col justify-center">
-                    <img class="mx-auto" src="images/carbon_location-filled.svg" alt="">
-                    <h6 class="text-lg text-primary py-2">Address</h6>
-                    <p class="text-xs"> Lonevegen 1, 5221 Nesttun</p>
-                </div>
-                <div class="text-center flex flex-col justify-center">
-                    <img class="mx-auto" src="images/clock.svg" alt="">
-                    <h6 class="text-lg text-primary py-2">Åpningstider</h6>
-                    <p class="text-xs"> Vi har åpent alle dager fra kl. 13 -23</p>
-                </div>
-                <div class="text-center flex flex-col justify-center">
-                    <img class="mx-auto" src="images/call.svg" alt="">
-                    <h6 class="text-lg text-primary py-2">Contakt no</h6>
-                    <p class="text-xs"> Contact no</p>
+                    <div class="border-2 border-gray-400 rounded">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.4951655770715!2d5.348140416222726!3d60.321405538124736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cf9bc8fdd64c7%3A0x645939f62652fe5f!2sLonevegen%201%2C%205221%20Nesttun%2C%20Norway!5e0!3m2!1sen!2sbd!4v1624690975910!5m2!1sen!2sbd" width="600" height="100%" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
             </div>
-            <hr class="my-10 border-t-[1px] border-[#ffffff47]">
-            <div class="flex lg:justify-between lg:flex-row flex-col space-y-7 lg:space-y-0 items-center">
-                <div>
-                    <ul class="nav2 flex lg:space-x-10 lg:flex-row flex-col space-y-4 lg:space-y-0 text-sm items-center">
-                        <li><a href=""> Hjem</a></li>
-                        <li><a href=""> Meny</a></li>
-                        <li><a href=""> Bestill Board</a></li>
-                        <li><a href=""> Firmabestilling</a></li>
-                        <li><a href=""> Kontakt</a></li>
-                    </ul>
+        </section>
+
+        <footer class="bg-[#1B1B1B] py-10 text-white">
+            <div class="container">
+                <div class="grid lg:grid-cols-4 gap-y-9 lg:gap-y-0">
+                    <div class="logo mx-auto lg:mx-0">
+                        <img src="images/footer-logo.png" alt="" />
+                    </div>
+                    <div class="text-center flex flex-col justify-center">
+                        <img class="mx-auto" src="images/carbon_location-filled.svg" alt="" />
+                        <h6 class="text-lg text-primary py-2">Address</h6>
+                        <p class="text-xs">Lonevegen 1, 5221 Nesttun</p>
+                    </div>
+                    <div class="text-center flex flex-col justify-center">
+                        <img class="mx-auto" src="images/clock.svg" alt="" />
+                        <h6 class="text-lg text-primary py-2">Åpningstider</h6>
+                        <p class="text-xs">Vi har åpent alle dager fra kl. 13 -23</p>
+                    </div>
+                    <div class="text-center flex flex-col justify-center">
+                        <img class="mx-auto" src="images/call.svg" alt="" />
+                        <h6 class="text-lg text-primary py-2">Contakt no</h6>
+                        <p class="text-xs">Contact no</p>
+                    </div>
                 </div>
-                <div class="flex space-x-4">
-                    <a href=""><img src="images/fb2.svg" alt=""></a>
-                    <a href=""><img src="images/twitter.svg" alt=""></a>
-                    <a href=""><img src="images/insta2.svg" alt=""></a>
+                <hr class="my-10 border-t-[1px] border-[#ffffff47]" />
+                <div class="flex lg:justify-between lg:flex-row flex-col space-y-7 lg:space-y-0 items-center">
+                    <div>
+                        <ul class="nav2 flex lg:space-x-10 lg:flex-row flex-col space-y-4 lg:space-y-0 text-sm items-center">
+                            <li><a href=""> Hjem</a></li>
+                            <li><a href=""> Meny</a></li>
+                            <li><a href=""> Bestill Board</a></li>
+                            <li><a href=""> Firmabestilling</a></li>
+                            <li><a href=""> Kontakt</a></li>
+                        </ul>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href=""><img src="images/fb2.svg" alt="" /></a>
+                        <a href=""><img src="images/twitter.svg" alt="" /></a>
+                        <a href=""><img src="images/insta2.svg" alt="" /></a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</body>
+        </footer>
+        <script src="main.js"></script>
+    </body>
 </html>

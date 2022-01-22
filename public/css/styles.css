@@ -890,6 +890,10 @@ select {
   border-width: 2px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-t-\[1px\] {
   border-top-width: 1px;
 }
